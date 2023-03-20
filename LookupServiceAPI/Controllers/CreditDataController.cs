@@ -17,7 +17,7 @@ public class CreditDataController : ControllerBase
     [HttpGet(Name = "credit-data")]
     public IEnumerable<CreditDataItem> Get()
     {
-        return new CreditDataItem
+        yield return new CreditDataItem
         {
             firstName = "Jonathan",
             lastName = "Bateman",
